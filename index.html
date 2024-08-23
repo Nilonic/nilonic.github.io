@@ -6,22 +6,46 @@
     <title>nilonic.github.io</title>
     <link rel="stylesheet" href="styles/mainMenu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="styles/projects.css">
     <script src="scripts/Page.js"></script>
+    <script src="scripts/ProjectButtonActivator.js"></script>
 </head>
 <body>
     <h1></h1>
     <div id="sidebar">
-        <a href="#" class="nav-item" data-section="home"><span class="material-symbols-outlined">home</span></a>
-        <a href="#" class="nav-item" data-section="settings"><span class="material-symbols-outlined">settings</span></a>
-        <a href="#" class="nav-item" data-section="code"><span class="material-symbols-outlined">code</span></a>
-        <a href="#" class="nav-item" data-section="info"><span class="material-symbols-outlined">info</span></a>
+        <a class="nav-item" data-section="home"><span class="material-symbols-outlined">home</span></a>
+        <a class="nav-item" data-section="settings"><span class="material-symbols-outlined">settings</span></a>
+        <a class="nav-item" data-section="code"><span class="material-symbols-outlined">code</span></a>
+        <a class="nav-item" data-section="info"><span class="material-symbols-outlined">info</span></a>
     </div>
     <div id="sections">
         <div id="home" class="section">
-            Hello, my name is Nilon (or Nilonic). I am a {{age}} year old developer from {{country}}
+            Hello, my name is Nilon (or Nilonic). I am a <span data-placeholder="age">{{age}}</span> year old developer from <span data-placeholder="country">{{country}}</span>
+            <br>
+            <br>
+            I may be a bit hard to reach, especially since i work at minimum 30 hours a week, however if you need to report an issue, please do so on the repo's page. I'll be able to see it then, and hopefully act on it
+            <br>
+            <br>
+            When i have time, i'll update this section, but for now, feel free to look about
         </div>
-        <div id="settings" class="section">Settings Content</div>
+        <div id="settings" class="section">UNDER CONSTRUCTION</div>
         <div id="code" class="section">
+            <p>The source code is <a href="https://github.com/Nilonic/nilonic.github.io">here</a>, and is under the <a href="https://raw.githubusercontent.com/Nilonic/FNF-Midnight-Engine/main/LICENSE">GNU General Public License v3.0</a></p>
+            <p>however, here are some of my other projects:</p>
+            <div id="projects">
+                <div id="Project1" project="1">
+                    <p>Neo</p>
+                    <p><span data-placeholder="neo_stars">{{neo_stars}}</span></p>
+                    <p>A Minecraft hacked client for fabric</p>
+                    <button id="proj1">go to repo</button>
+                </div>
+                <div id="Project2" project="2">
+                    <p>Midnight Engine</p>
+                    <p><span data-placeholder="mid_stars">{{mid_stars}}</span></p>
+                    <p>A Friday Night Funkin' mod, built from nothing</p>
+                    <button id="proj2">go to repo</button>
+                </div>
+            </div>
         </div>
         <div id="info" class="section">
             <p>This website uses Fonts from the game Team Fortress 2, and Material Icons from fonts.google.com</p>
