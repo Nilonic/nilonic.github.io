@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'tf2build';
+    src: url('../fonts/tf2build.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Make the body stack its children vertically */
+    margin: 0; /* Remove default margin */
+    padding: 0;
+    padding-left: 55px;
+    font-family: 'tf2build';
+    margin: 0; /* Ensure there's no margin around the h1 */
+}
+
+#sidebar {
+    width: 50px;
+    background-color: grey;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+#sidebar .selected {
+    color: #ef9849;
+}
+
+#content {
+    margin-left: 60px; /* Offset for the fixed sidebar */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.section {
+    display: none;
+}
