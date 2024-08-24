@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nilonic.github.io</title>
+    <title>Nilon's page</title>
     <link rel="stylesheet" href="styles/mainMenu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/settings.css">
     <script src="scripts/Page.js"></script>
     <script src="scripts/ProjectButtonActivator.js"></script>
+    <script src="scripts/SettingsStuff.js"></script>
 </head>
 <body>
     <h1></h1>
@@ -28,12 +30,32 @@
             <br>
             When i have time, i'll update this section, but for now, feel free to look about
         </div>
-        <div id="settings" class="section">UNDER CONSTRUCTION</div>
+        <div id="settings" class="section">
+            <div id="settings-container">
+                <h2>Settings</h2>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="accessible-font-toggle">
+                    <span class="slider"></span>
+                    <p> Use accessible font</p>
+                </label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="fetch-github-stars-toggle" checked>
+                    <span class="slider"></span>
+                    <p> Fetch Github stars</p>
+                </label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="Dark-Mode">
+                    <span class="slider"></span>
+                    <p> Dark Mode</p>
+                </label>
+            </div>
+        </div>
         <div id="code" class="section">
             <p>The source code is <a href="https://github.com/Nilonic/nilonic.github.io">here</a>, and is under the <a href="https://raw.githubusercontent.com/Nilonic/FNF-Midnight-Engine/main/LICENSE">GNU General Public License v3.0</a></p>
             <p>however, here are some of my other projects:</p>
+            <span data-placeholder="cache">{{cache}}</span>
             <div id="projects">
-                <div id="Project1" project="1">
+                <div id="Project1" project="1"> 
                     <p>Neo</p>
                     <p><span data-placeholder="neo_stars">{{neo_stars}}</span></p>
                     <p>A Minecraft hacked client for fabric</p>

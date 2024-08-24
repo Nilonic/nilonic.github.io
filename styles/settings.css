@@ -1,0 +1,47 @@
+        /* Toggle Switch Styles */
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .toggle-switch input[type="checkbox"] {
+            display: none;
+        }
+        .toggle-switch .slider {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background-color: #ccc;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .toggle-switch .slider::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+        .toggle-switch input:checked + .slider {
+            background-color: #2196F3;
+        }
+        .toggle-switch input:checked + .slider::before {
+            transform: translateX(26px);
+        }
+
+        a#whatButton{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .dark-mode {
+            background-color: rgb(81, 81, 81);
+            color: whitesmoke;
+        }
+        
