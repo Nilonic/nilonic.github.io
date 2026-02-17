@@ -11,8 +11,7 @@ function init() {
     };
 
     const starRepos = {
-        '[data-placeholder="neo_stars"]': 'https://api.github.com/repos/nilonic/neo',
-        '[data-placeholder="mid_stars"]': 'https://api.github.com/repos/nilonic/FNF-Midnight-Engine',
+        '[data-placeholder="mid_stars"]': 'https://api.github.com/repos/nilonic/Imperfect-Engine',
     };
 
     fetchStars(starRepos, stars => {
